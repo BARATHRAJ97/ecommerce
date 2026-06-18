@@ -4,6 +4,7 @@ const cartCount = document.querySelector("#cartCount");
 const forms = document.querySelectorAll("form");
 const productGrid = document.querySelector("#productGrid");
 const productCount = document.querySelector("#productCount");
+const themeToggle = document.querySelector(".theme-toggle");
 
 const products = [
   { type: "Footwear", name: "AeroRun Pro Sneakers", price: 98, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80", description: "Breathable performance sneakers for work, travel, and training." },
@@ -59,6 +60,18 @@ const products = [
 ];
 
 let cartItems = Number(localStorage.getItem("urbanCartItems") || 0);
+let selectedTheme = localStorage.getItem("urbanCartTheme") || "light";
+
+const applyTheme = (theme) => {
+  document.body.classList.toggle("dark-theme", theme === "dark");
+
+  if (themeToggle) {
+    themeToggle.textContent = theme === "dark" ? "Light" : "Dark";
+    themeToggle.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+  }
+};
+
+applyTheme(selectedTheme);
 
 if (cartCount) {
   cartCount.textContent = cartItems;
@@ -98,6 +111,14 @@ if (menuToggle && navLinks) {
       navLinks.classList.remove("open");
       menuToggle.setAttribute("aria-expanded", "false");
     });
+  });
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    selectedTheme = selectedTheme === "dark" ? "light" : "dark";
+    localStorage.setItem("urbanCartTheme", selectedTheme);
+    applyTheme(selectedTheme);
   });
 }
 
