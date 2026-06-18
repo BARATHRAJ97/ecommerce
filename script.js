@@ -59,8 +59,8 @@ const products = [
   { type: "Electronics", name: "Tablet Sketch Pen", price: 66, image: "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?auto=format&fit=crop&w=800&q=80", description: "Responsive stylus for notes, sketches, signatures, and planning." }
 ];
 
-let cartItems = Number(localStorage.getItem("urbanCartItems") || 0);
-let selectedTheme = localStorage.getItem("urbanCartTheme") || "light";
+let cartItems = Number(localStorage.getItem("barathCartItems") || 0);
+let selectedTheme = localStorage.getItem("barathCartTheme") || "light";
 
 const applyTheme = (theme) => {
   document.body.classList.toggle("dark-theme", theme === "dark");
@@ -117,7 +117,7 @@ if (menuToggle && navLinks) {
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     selectedTheme = selectedTheme === "dark" ? "light" : "dark";
-    localStorage.setItem("urbanCartTheme", selectedTheme);
+    localStorage.setItem("barathCartTheme", selectedTheme);
     applyTheme(selectedTheme);
   });
 }
@@ -125,7 +125,7 @@ if (themeToggle) {
 document.querySelectorAll(".add-cart").forEach((button) => {
   button.addEventListener("click", () => {
     cartItems += 1;
-    localStorage.setItem("urbanCartItems", String(cartItems));
+    localStorage.setItem("barathCartItems", String(cartItems));
 
     if (cartCount) {
       cartCount.textContent = cartItems;
