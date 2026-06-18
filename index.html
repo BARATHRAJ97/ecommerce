@@ -3,291 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UrbanCart | Modern Ecommerce Store</title>
+  <title>UrbanCart | Premium Ecommerce Website</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar">
-      <a class="brand" href="#home" aria-label="UrbanCart home">
+      <a class="brand" href="index.html" aria-label="UrbanCart home">
         <span class="brand-mark">U</span>
         <span>UrbanCart</span>
       </a>
-
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
-
       <div class="nav-links">
-        <a href="#categories">Categories</a>
-        <a href="#deals">Deals</a>
-        <a href="#products">Products</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
       </div>
-
       <div class="nav-actions">
-        <button class="icon-button" aria-label="Search">⌕</button>
-        <button class="cart-button" aria-label="Cart">
-          Cart <span id="cartCount">0</span>
-        </button>
+        <a class="ghost-button small" href="shop.html">Search</a>
+        <button class="cart-button" aria-label="Cart">Cart <span id="cartCount">0</span></button>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
+    <section class="hero hero-home">
+      <div class="hero-copy-block">
         <p class="eyebrow">Fresh arrivals for modern living</p>
-        <h1>Shop smarter with premium products, honest prices, and fast delivery.</h1>
-        <p class="hero-copy">
-          Discover fashion, electronics, home essentials, beauty picks, and everyday favorites curated for quality, comfort, and style.
-        </p>
+        <h1>Premium shopping made simple, stylish, and trustworthy.</h1>
+        <p class="lead">Explore curated fashion, electronics, beauty, home, and lifestyle products with clear details, fast delivery, and helpful support from browse to doorstep.</p>
         <div class="hero-actions">
-          <a class="primary-button" href="#products">Shop Collection</a>
-          <a class="secondary-button" href="#deals">View Offers</a>
+          <a class="primary-button" href="shop.html">Shop New Collection</a>
+          <a class="secondary-button" href="product.html">View Featured Item</a>
         </div>
         <div class="hero-stats">
-          <div><strong>25K+</strong><span>Happy customers</span></div>
-          <div><strong>4.8/5</strong><span>Average rating</span></div>
-          <div><strong>24h</strong><span>Quick dispatch</span></div>
+          <div><strong>35K+</strong><span>Orders delivered</span></div>
+          <div><strong>4.8/5</strong><span>Customer rating</span></div>
+          <div><strong>24h</strong><span>Fast dispatch</span></div>
         </div>
       </div>
-      <div class="hero-showcase" aria-label="Featured products">
-        <div class="showcase-card large">
-          <span class="tag">Best Seller</span>
-          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Orange running shoes">
-          <h2>AeroRun Pro Sneakers</h2>
-          <p>Lightweight comfort for active days.</p>
-        </div>
-        <div class="floating-card">
-          <strong>50%</strong>
-          <span>Weekend sale</span>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?auto=format&fit=crop&w=1100&q=80" alt="Online shopping products and bags">
+        <div class="promo-card">
+          <span>Weekend Drop</span>
+          <strong>Up to 50% off</strong>
         </div>
       </div>
     </section>
 
     <section class="service-strip" aria-label="Store benefits">
-      <div>
-        <strong>Free Shipping</strong>
-        <span>On orders above $49</span>
-      </div>
-      <div>
-        <strong>Easy Returns</strong>
-        <span>7-day return support</span>
-      </div>
-      <div>
-        <strong>Secure Payment</strong>
-        <span>Encrypted checkout</span>
-      </div>
-      <div>
-        <strong>Live Support</strong>
-        <span>Friendly help anytime</span>
-      </div>
+      <div><strong>Free Shipping</strong><span>On orders above $49</span></div>
+      <div><strong>Secure Checkout</strong><span>Encrypted payment process</span></div>
+      <div><strong>Easy Returns</strong><span>7-day support window</span></div>
+      <div><strong>Quality Checked</strong><span>Curated product catalog</span></div>
     </section>
 
-    <section class="section" id="categories">
-      <div class="section-heading">
-        <p class="eyebrow">Shop by need</p>
-        <h2>Popular categories</h2>
+    <section class="section">
+      <div class="section-heading wide">
+        <div>
+          <p class="eyebrow">Shop by lifestyle</p>
+          <h2>Featured categories</h2>
+        </div>
+        <p>Each category is built around practical products with attractive design, useful details, and everyday value.</p>
       </div>
       <div class="category-grid">
-        <a class="category-card fashion" href="#products">
+        <a class="category-card fashion" href="shop.html">
           <span>Fashion</span>
-          <strong>Trendy fits and accessories</strong>
+          <strong>Everyday outfits, bags, shoes, and accessories.</strong>
         </a>
-        <a class="category-card tech" href="#products">
+        <a class="category-card tech" href="shop.html">
           <span>Electronics</span>
-          <strong>Smart gadgets for daily life</strong>
+          <strong>Headphones, wearables, desk gear, and smart devices.</strong>
         </a>
-        <a class="category-card home" href="#products">
-          <span>Home</span>
-          <strong>Comfort pieces for every room</strong>
+        <a class="category-card home" href="shop.html">
+          <span>Home Living</span>
+          <strong>Soft furnishings, lighting, organizers, and decor.</strong>
         </a>
-        <a class="category-card beauty" href="#products">
+        <a class="category-card beauty" href="shop.html">
           <span>Beauty</span>
-          <strong>Clean care and grooming picks</strong>
+          <strong>Skincare, fragrances, grooming, and clean care sets.</strong>
         </a>
       </div>
     </section>
 
-    <section class="deal-band" id="deals">
+    <section class="deal-band">
       <div>
-        <p class="eyebrow">Limited time</p>
-        <h2>Mid-season deals up to 50% off</h2>
-        <p>Save on top-rated essentials, giftable finds, and customer-loved products before the offer ends.</p>
+        <p class="eyebrow">Limited offer</p>
+        <h2>Mid-season sale with bundle rewards.</h2>
+        <p>Buy two or more featured products and unlock extra checkout savings, priority delivery, and gift-ready packaging.</p>
       </div>
       <div class="timer" aria-label="Offer countdown">
         <span><strong>02</strong>Days</span>
         <span><strong>14</strong>Hours</span>
         <span><strong>38</strong>Mins</span>
       </div>
-      <a class="primary-button light" href="#products">Grab Deals</a>
+      <a class="primary-button light" href="shop.html">Grab Deals</a>
     </section>
 
-    <section class="section" id="products">
+    <section class="section">
       <div class="section-heading wide">
         <div>
-          <p class="eyebrow">Curated collection</p>
-          <h2>Featured products</h2>
+          <p class="eyebrow">Customer favorites</p>
+          <h2>Trending products</h2>
         </div>
-        <p>Every item is selected for quality, usefulness, and value. Tap add to cart to preview a simple shopping interaction.</p>
+        <a class="text-link" href="shop.html">View all products</a>
       </div>
-
       <div class="product-grid">
         <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Minimal wrist watch">
+          <a href="product.html"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Orange running sneakers"></a>
+          <div class="product-info">
+            <span class="product-type">Footwear</span>
+            <h3>AeroRun Pro Sneakers</h3>
+            <p>Lightweight knit comfort, responsive sole, and bold street-ready styling.</p>
+            <div class="product-footer"><strong>$98</strong><button class="add-cart">Add</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a href="product.html"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Black wireless headphones"></a>
+          <div class="product-info">
+            <span class="product-type">Audio</span>
+            <h3>Pulse Max Headphones</h3>
+            <p>Immersive sound with soft ear cushions and all-day battery life.</p>
+            <div class="product-footer"><strong>$129</strong><button class="add-cart">Add</button></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <a href="product.html"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Minimal wrist watch"></a>
           <div class="product-info">
             <span class="product-type">Accessories</span>
             <h3>Nordic Time Watch</h3>
-            <p>Minimal stainless steel design with water resistance.</p>
-            <div class="product-footer">
-              <strong>$89</strong>
-              <button class="add-cart">Add</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Black headphones">
-          <div class="product-info">
-            <span class="product-type">Electronics</span>
-            <h3>Pulse Max Headphones</h3>
-            <p>Deep bass, noise isolation, and 30-hour battery life.</p>
-            <div class="product-footer">
-              <strong>$129</strong>
-              <button class="add-cart">Add</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80" alt="Women's heels">
-          <div class="product-info">
-            <span class="product-type">Fashion</span>
-            <h3>Velvet Step Heels</h3>
-            <p>Elegant evening heels with a cushioned insole.</p>
-            <div class="product-footer">
-              <strong>$74</strong>
-              <button class="add-cart">Add</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?auto=format&fit=crop&w=800&q=80" alt="Perfume bottle">
-          <div class="product-info">
-            <span class="product-type">Beauty</span>
-            <h3>Luna Bloom Perfume</h3>
-            <p>Soft floral fragrance with warm amber notes.</p>
-            <div class="product-footer">
-              <strong>$59</strong>
-              <button class="add-cart">Add</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80" alt="White sneakers">
-          <div class="product-info">
-            <span class="product-type">Footwear</span>
-            <h3>StreetFlex Sneakers</h3>
-            <p>Everyday sneakers with breathable knit panels.</p>
-            <div class="product-footer">
-              <strong>$98</strong>
-              <button class="add-cart">Add</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="Skin care products">
-          <div class="product-info">
-            <span class="product-type">Skincare</span>
-            <h3>Glow Care Set</h3>
-            <p>Cleanser, toner, and moisturizer for daily care.</p>
-            <div class="product-footer">
-              <strong>$46</strong>
-              <button class="add-cart">Add</button>
-            </div>
+            <p>Minimal steel case, refined dial, and water resistant daily finish.</p>
+            <div class="product-footer"><strong>$89</strong><button class="add-cart">Add</button></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="story-section">
-      <div class="story-image">
+    <section class="split-section">
+      <div class="split-image">
         <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1000&q=80" alt="Shopping bags in a boutique">
       </div>
-      <div class="story-content">
-        <p class="eyebrow">Why UrbanCart</p>
-        <h2>Quality shopping without the clutter.</h2>
-        <p>
-          We focus on products that look good, last longer, and make everyday routines easier. Our catalog is reviewed regularly so customers can shop with confidence instead of scrolling endlessly.
-        </p>
-        <ul>
-          <li>Verified product quality and updated stock details.</li>
-          <li>Clear pricing with seasonal discounts and bundle offers.</li>
-          <li>Helpful support for orders, delivery, returns, and exchanges.</li>
-        </ul>
+      <div class="split-content">
+        <p class="eyebrow">Why people choose us</p>
+        <h2>More information, better decisions, happier shopping.</h2>
+        <p>UrbanCart gives customers the details they need before buying: clear photos, concise specifications, delivery notes, return terms, quality highlights, and genuine customer feedback.</p>
+        <div class="info-list">
+          <div><strong>Detailed product pages</strong><span>Size, material, warranty, delivery, and care information.</span></div>
+          <div><strong>Helpful discovery</strong><span>Organized sections for best sellers, new arrivals, and sale picks.</span></div>
+          <div><strong>Trust-first checkout</strong><span>Visible support details, secure payment, and transparent policies.</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="reviews">
+    <section class="section">
       <div class="section-heading">
-        <p class="eyebrow">Customer voices</p>
-        <h2>Loved by shoppers</h2>
+        <p class="eyebrow">Real reviews</p>
+        <h2>What shoppers say</h2>
       </div>
       <div class="review-grid">
-        <article class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>"The website feels premium, the product details are clear, and my order arrived earlier than expected."</p>
-          <strong>Priya S.</strong>
-        </article>
-        <article class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>"Great collection. I bought headphones and sneakers together, and both were exactly as shown."</p>
-          <strong>Daniel R.</strong>
-        </article>
-        <article class="review-card">
-          <div class="stars">★★★★☆</div>
-          <p>"Clean checkout, useful offers, and quick support when I needed to change my delivery address."</p>
-          <strong>Aisha M.</strong>
-        </article>
+        <article class="review-card"><div class="stars">5/5</div><p>"The layout is clean and the products feel premium. I found exactly what I needed quickly."</p><strong>Priya S.</strong></article>
+        <article class="review-card"><div class="stars">5/5</div><p>"Great photos, useful details, and the deal section made checkout feel worth it."</p><strong>Daniel R.</strong></article>
+        <article class="review-card"><div class="stars">4.8/5</div><p>"Support responded fast when I had a delivery question. Smooth experience overall."</p><strong>Aisha M.</strong></article>
       </div>
-    </section>
-
-    <section class="newsletter" id="contact">
-      <div>
-        <p class="eyebrow">Stay updated</p>
-        <h2>Get new arrivals and private offers.</h2>
-      </div>
-      <form>
-        <label class="sr-only" for="email">Email address</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
-        <button class="primary-button" type="submit">Subscribe</button>
-      </form>
     </section>
   </main>
 
   <footer class="footer">
     <div>
-      <a class="brand" href="#home">
-        <span class="brand-mark">U</span>
-        <span>UrbanCart</span>
-      </a>
+      <a class="brand" href="index.html"><span class="brand-mark">U</span><span>UrbanCart</span></a>
       <p>Modern ecommerce experience for fashion, tech, home, beauty, and lifestyle products.</p>
     </div>
     <div class="footer-links">
-      <a href="#categories">Categories</a>
-      <a href="#products">Products</a>
-      <a href="#deals">Offers</a>
-      <a href="#contact">Support</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Support</a>
     </div>
   </footer>
 
