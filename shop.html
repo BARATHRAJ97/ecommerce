@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | UrbanCart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">U</span><span>UrbanCart</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="shop.html" class="active">Shop</a><a href="product.html">Product</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions"><a class="ghost-button small" href="#filters">Filter</a><button class="cart-button">Cart <span id="cartCount">0</span></button></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero shop-hero">
+      <p class="eyebrow">Shop everything</p>
+      <h1>Discover top-rated products for every part of your day.</h1>
+      <p class="lead">Browse new arrivals, best sellers, giftable picks, and limited sale products across lifestyle categories.</p>
+    </section>
+
+    <section class="section shop-layout" id="filters">
+      <aside class="filter-panel">
+        <h2>Filters</h2>
+        <label>Search products<input type="search" placeholder="Try headphones"></label>
+        <label>Category<select><option>All categories</option><option>Fashion</option><option>Electronics</option><option>Beauty</option><option>Home</option></select></label>
+        <label>Price range<select><option>Any price</option><option>Under $50</option><option>$50 - $100</option><option>$100+</option></select></label>
+        <div class="filter-tags">
+          <span>New</span><span>Sale</span><span>Best Seller</span><span>Gift Ready</span>
+        </div>
+      </aside>
+
+      <div>
+        <div class="shop-topbar">
+          <p>Showing 8 popular products</p>
+          <select aria-label="Sort products"><option>Sort by featured</option><option>Price low to high</option><option>Newest first</option></select>
+        </div>
+        <div class="product-grid shop-grid">
+          <article class="product-card"><a href="product.html"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Orange sneakers"></a><div class="product-info"><span class="product-type">Footwear</span><h3>AeroRun Pro Sneakers</h3><p>Breathable performance sneakers for work, travel, and training.</p><div class="product-footer"><strong>$98</strong><button class="add-cart">Add</button></div></div></article>
+          <article class="product-card"><a href="product.html"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Headphones"></a><div class="product-info"><span class="product-type">Electronics</span><h3>Pulse Max Headphones</h3><p>Wireless audio with soft cushions and powerful battery life.</p><div class="product-footer"><strong>$129</strong><button class="add-cart">Add</button></div></div></article>
+          <article class="product-card"><a href="product.html"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Watch"></a><div class="product-info"><span class="product-type">Accessories</span><h3>Nordic Time Watch</h3><p>Minimal watch with a stainless case and clean everyday dial.</p><div class="product-footer"><strong>$89</strong><button class="add-cart">Add</button></div></div></article>
+          <article class="product-card"><a href="product.html"><img src="https://images.unsplash.com/photo-1585386959984-a41552231658?auto=format&fit=crop&w=800&q=80" alt="Perfume"></a><div class="product-info"><span class="product-type">Beauty</span><h3>Luna Bloom Perfume</h3><p>Soft floral fragrance with amber base notes and premium bottle.</p><div class="product-footer"><strong>$59</strong><button class="add-cart">Add</button></div></div></article>
+          <article class="product-card"><a href="product.html"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="Skincare set"></a><div class="product-info"><span class="product-type">Skincare</span><h3>Glow Care Set</h3><p>Cleanser, toner, and moisturizer for a balanced daily routine.</p><div class="product-footer"><strong>$46</strong><button class="add-cart">Add</button></div></div></article>
+          <article class="product-card"><a href="product.html"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80" alt="Heels"></a><div class="product-info"><span class="product-type">Fashion</span><h3>Velvet Step Heels</h3><p>Elegant heels with a supportive insole for evening looks.</p><div class="product-footer"><strong>$74</strong><button class="add-cart">Add</button></div></div></article>
+          <article class="product-card"><a href="product.html"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Green sofa"></a><div class="product-info"><span class="product-type">Home</span><h3>CloudRest Accent Chair</h3><p>Comfortable lounge seating with durable fabric and clean lines.</p><div class="product-footer"><strong>$210</strong><button class="add-cart">Add</button></div></div></article>
+          <article class="product-card"><a href="product.html"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Laptop desk setup"></a><div class="product-info"><span class="product-type">Workspace</span><h3>DeskFlow Organizer</h3><p>Smart desktop storage for cables, tools, notes, and devices.</p><div class="product-footer"><strong>$39</strong><button class="add-cart">Add</button></div></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div><a class="brand" href="index.html"><span class="brand-mark">U</span><span>UrbanCart</span></a><p>Modern ecommerce experience for fashion, tech, home, beauty, and lifestyle products.</p></div><div class="footer-links"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Support</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | UrbanCart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">U</span><span>UrbanCart</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="product.html">Product</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html" class="active">Contact</a></div>
+      <div class="nav-actions"><a class="ghost-button small" href="shop.html">Shop</a><button class="cart-button">Cart <span id="cartCount">0</span></button></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <p class="eyebrow">Support center</p>
+      <h1>Questions about products, orders, delivery, or returns?</h1>
+      <p class="lead">This page gives the ecommerce website a professional support area with contact details, FAQs, and a customer message form.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-cards">
+        <article><strong>Email</strong><span>support@urbancart.com</span></article>
+        <article><strong>Phone</strong><span>+1 555 0188 240</span></article>
+        <article><strong>Hours</strong><span>Mon - Sat, 9:00 AM - 7:00 PM</span></article>
+        <article><strong>Returns</strong><span>7-day support for eligible products</span></article>
+      </div>
+
+      <form class="contact-form">
+        <label>Your name<input type="text" placeholder="Enter your name" required></label>
+        <label>Email address<input type="email" placeholder="Enter your email" required></label>
+        <label>Topic<select><option>Order question</option><option>Product information</option><option>Return or exchange</option><option>Partnership</option></select></label>
+        <label>Message<textarea placeholder="How can we help?" rows="5" required></textarea></label>
+        <button class="primary-button" type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="section faq-section">
+      <div class="section-heading"><p class="eyebrow">Quick answers</p><h2>Frequently asked questions</h2></div>
+      <div class="details-grid">
+        <article><h3>How fast is delivery?</h3><p>Most orders dispatch within 24 hours and delivery timing depends on the shipping location.</p></article>
+        <article><h3>Can I return a product?</h3><p>Unused products with tags can be returned within 7 days under the return policy.</p></article>
+        <article><h3>Are payments secure?</h3><p>The checkout experience is designed around encrypted payment and clear order confirmation.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div><a class="brand" href="index.html"><span class="brand-mark">U</span><span>UrbanCart</span></a><p>Modern ecommerce experience for fashion, tech, home, beauty, and lifestyle products.</p></div><div class="footer-links"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Support</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
