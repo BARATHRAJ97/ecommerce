@@ -154,6 +154,12 @@ button, input, select, textarea { font: inherit; }
   background: #fff;
   border: 1px solid var(--line);
 }
+.login-action.active,
+.login-action:hover {
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--violet));
+  border-color: transparent;
+}
 body.dark-theme .site-header {
   background: rgba(17, 24, 39, 0.9);
 }
@@ -923,7 +929,7 @@ body.dark-theme .filter-tags span {
   .navbar { min-height: 68px; }
   .brand { font-size: 1rem; }
   .brand-mark { width: 34px; height: 34px; }
-  .nav-actions .ghost-button { display: none; }
+  .nav-actions .ghost-button:not(.login-action) { display: none; }
   .theme-toggle { min-width: 64px; padding: 0 10px; }
   .nav-links { top: 68px; }
   .hero h1, .page-hero h1 { font-size: 2.35rem; }
